@@ -1,0 +1,71 @@
+.login-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(to right, #f0f8ff, #e3f2fd); */
+  }
+  
+  /* The form itself */
+  .login-form {
+
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Input + label container */
+  .form-control {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Label */
+  .form-control label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Full-width input */
+  .form-control input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control input:focus {
+    border-color: #007BFF;
+    background-color: #f4faff;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  button[disabled] {
+    background-color: #a59ec1;
+    cursor: not-allowed;
+  }

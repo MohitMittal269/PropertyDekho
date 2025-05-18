@@ -1,0 +1,115 @@
+.postproperty-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f0f9ff, #cfe4ff); /* Property Dekho gradient style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for modern look */
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Form headings */
+  .postproperty-form h2 {
+    font-size: 1.5rem;
+    color: #003580; /* Property Dekho primary color */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f0f9ff; /* Subtle divider */
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Form labels */
+  .postproperty-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #003580; /* Matching brand style */
+  }
+  
+  /* Inputs and textareas */
+  .postproperty-form input,
+  .postproperty-form select,
+  .postproperty-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cfd8dc; /* Soft border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* Focus effect */
+  .postproperty-form input:focus,
+  .postproperty-form select:focus,
+  .postproperty-form textarea:focus {
+    border-color: #003580; /* Highlight with Property Dekho blue */
+    outline: none;
+  }
+  
+  /* Checkbox and radio */
+  .postproperty-form input[type='checkbox'],
+  .postproperty-form input[type='radio'] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Button */
+  .postproperty-form button {
+    background-color: #003580; /* Property Dekho primary blue */
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .postproperty-form button:hover {
+    background-color: #0056b3; /* Slightly darker shade for hover */
+  }
+  
+  /* Form sections */
+  .postproperty-form .form-section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Sub-labels for inline fields */
+  .postproperty-form .inline-label {
+    display: inline-block;
+    width: 48%; /* Half width */
+    margin-right: 2%; /* Gap */
+  }
+  
+  .postproperty-form .inline-label:last-child {
+    margin-right: 0; /* No gap for last item */
+  }
+  
+  /* Image upload section */
+  .postproperty-form .image-upload {
+    background: #e3f2fd; /* Light blue for upload section */
+    padding: 1rem;
+    border: 1px dashed #90caf9; /* Dashed border for emphasis */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .postproperty-form .image-upload span {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .postproperty-form {
+      padding: 1.5rem;
+    }
+  
+    .postproperty-form .inline-label {
+      width: 100%; /* Full width on small screens */
+      margin-right: 0;
+    }
+  }

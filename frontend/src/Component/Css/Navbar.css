@@ -1,0 +1,330 @@
+/*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+  }
+  */
+  /* Navbar */
+  /*.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .post-property-btn,
+  .login-btn {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-property-btn .free-tag {
+    font-weight: bold;
+    color: #e67e22;
+  }
+  
+  .post-property-btn:hover,
+  .login-btn:hover {
+    background-color: #2ecc71;
+  }
+  */
+  /* Login Container */
+  /*.login-container {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 500px;
+    background: linear-gradient(to right, #f0f9ff, #cfd9df);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .login-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  */
+  /* Form Container */
+  /*.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .location-img {
+    margin-bottom: 10px;
+  }
+  
+  .city-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .submit-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }*/
+  
+  .navbar-container {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+  }
+  
+  /* Navbar layout */
+  .navbar {
+       background: linear-gradient(135deg, #e3f2fd, #ffffff);
+       animation: fadeIn 1s ease-in;
+       transition: background 0.5s ease;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  }
+  
+  /* Brand */
+  .brand-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF;
+    animation: slideInLeft 2s ease-out forwards;
+  }
+  
+  /* Button base style */
+  button {
+    padding: 10px 18px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.7s ease, transform 0.5s ease;
+  }
+  
+  /* Post Property button */
+  .post-property-btn {
+    background-color: #007BFF;
+    color: white;
+    margin-right: 15px;
+    position: relative;
+    
+
+  }
+  .post-property-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.10);
+  }
+  .post-property-btn .free-tag {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  
+  /* Auth buttons */
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Login/Signup buttons */
+  .login-btn {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.20);
+  }
+  
+  /* Logout button can be styled differently if needed */
+  .logout-btn {
+    margin-left: 10px;
+    background-color: #007BFF;
+  }
+  
+  .logout-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.20);
+  }
+  
+  /* Wishlist and user section */
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .wishlist-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+  }
+  
+  .wishlist-link:hover {
+    color: #0056b3;
+  }
+  
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  
+  /* Animations */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(10%);
+      opacity: 1;
+    }
+  }
+  /* Search Section */
+  .search-container {
+     /* Light blue to white */
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    transition: background 0.5s ease;
+  }
+  
+  .search-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #007BFF;
+    margin-bottom: 30px;
+    animation: slideDown 2s ease-in-out;
+  }
+  
+  /* Form wrapper */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent; /* remove box look */
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* Better-integrated icon */
+  
+  /* Select dropdown with clean style */
+  .city-select {
+    padding: 10px 12px 10px 35px; /* leave room for icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    background-image: url('C:\Users\Rohit Mittal\Desktop\startreact\front-endss\public\image\location.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 18px 18px;
+    appearance: none;
+    outline: none;
+    transition: border-color 0.8s ease;
+  }
+  
+  .city-select:focus {
+    border-color: #007BFF;
+  }
+  
+  /* Submit button styling (same as before) */
+  .submit-btn {
+    background-color: #007BFF;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    .user-actions {
+      flex-direction: column;
+    }
+    .form-container {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
